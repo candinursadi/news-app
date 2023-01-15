@@ -17,7 +17,6 @@ use App\Http\Controllers\API\NewsController;
 */
 
 Route::controller(UserController::class)->group(function () {
-    Route::get('ada', 'index');
     Route::post('login', 'login');
     Route::post('register', 'register');
     Route::post('detail', 'detail')->middleware('auth:api');
